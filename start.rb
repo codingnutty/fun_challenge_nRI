@@ -22,7 +22,7 @@ def random(arr)
   return arr[rand(arr.length)]
 end
 
-# method to sort an array of arrays based on a property. Will be used to divide data in Strands and Standards.
+# method to sort an array of arrays based on a property
 # Index is the index of the property we are sorting on
 def group(arr, index)
   # create a hash. Keys are a property. Values are an array of arrays.
