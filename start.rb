@@ -16,5 +16,16 @@ until number.is_a?(Fixnum) && number>0 do
   number = Integer(gets) rescue nil
 end
 
-puts questions
-puts students
+
+#chooses a random question.
+def random(arr)
+  return arr[rand(arr.length)]
+end
+
+results = []
+
+(1..number).each do |i|
+  results.push random(questions)[4]
+end
+
+puts results
